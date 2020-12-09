@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wish List</title>
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div style="display: none" id="hideAll">&nbsp;</div>
+    <script type="text/javascript">
+        document.getElementById("hideAll").style.display = "block";
+      </script> 
+<div class="container-fluid p-0">
+    <div class="row">
+      <div class="col-md-5 col-sm-12 border border-dark p-0" id="left-div">
+        <img src="annie-spratt-1Qg9PXse00s-unsplash.jpg" alt="Christmas Gifts">
+      </div>
+      <div class="col-md-7 col-sm-12 d-flex flex-column text-center bg-white p-0">
+          <div class="m-5 d-flex flex-column justify-content-around">
+            <h1 class="p-2">MyWish.com</h1>
+            <h3 class="p-2 font-weight-light text-dark">Collaboratively find out what gifts do people around the world wish to get this Christmas.</h3>
+
+          </div>
+          <div class="m-5 p-5 p-3">
+            <button class="btn btn-lg btn-danger align-bottom">Get Started</button>
+          </div>
+          <div class="mt-5 h-25 align-self-auto d-flex flex-row justify-content-around text-white font-weight-lighter align-items-center" style="background-color: rgb(5, 36, 5);">
+            <h1>Christmas in :</h1>
+            <div>
+                <h2 id="days">00</h2><h4>Days</h4>
+            </div>
+            <div>
+                <h2 id="hours">00</h2><h4>Hours</h4>
+            </div>
+            <div>
+                <h2 id="mins">00</h2><h4>Mins</h4>
+            </div>
+            <div>
+                <h2 id="secs">00</h2><h4>Secs</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

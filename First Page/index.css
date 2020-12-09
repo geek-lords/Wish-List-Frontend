@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    display:none;
+}
+.container-fluid {
+    overflow: hidden;
+}
+
+#hideAll
+ {
+   position: fixed;
+   left: 0px; 
+   right: 0px; 
+   top: 0px; 
+   bottom: 0px; 
+   background-color: white;
+   z-index: 99; /* Higher than anything else in the document */
+ }
+
+ #left-div img {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+  }
