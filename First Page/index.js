@@ -24,15 +24,15 @@ var x = setInterval(function() {
   // Display the result in the element with id="demo"
   //document.getElementById("demo").innerHTML = days + "d " + hours + "h "
  // + minutes + "m " + seconds + "s ";
- document.getElementById("days").innerHTML = days;
- document.getElementById("hours").innerHTML = hours;
- document.getElementById("mins").innerHTML = minutes;
+ document.getElementById("days").innerHTML = days + " : ";
+ document.getElementById("hours").innerHTML = hours + " : ";
+ document.getElementById("mins").innerHTML = minutes + " : ";
  document.getElementById("secs").innerHTML = seconds;
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    //document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("days").innerHTML = "EXPIRED after 25th Dec";
   }
 }, 1000);
 }

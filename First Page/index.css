@@ -24,4 +24,20 @@
     width: 100%;
     height: 100vh;
     margin: auto;
+    border-right: 2px solid black;
+  }
+
+  #countdown{
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+
+  #get-started{
+    background-image: url(santa.svg), url(Present1.svg), url(Present2.svg);
+    background-position: 10em, 21em 5em, 25.5em 5em;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: contain, 4em, 4em;
+
   }
