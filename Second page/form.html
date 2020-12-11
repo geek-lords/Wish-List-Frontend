@@ -23,54 +23,41 @@
     <div class="container-fluid p-0 h-100">
         <div class="row">
             <div class="col-md-7 d-flex flex-column text-center" id="left-div">
-                <h1 class="p-2 mt-5 font-weight-normal display-4">My<span style="color: rgb(3, 32, 110);">Wish</span>.com</h1>
-                <input class="form-control m-3 w-50 align-self-center shadow text-center" style="color: rgb(3, 32, 110);" type="search" placeholder="Search" aria-label="Search">
-                <div class="w-50 text-center align-self-center m-3 border-0">
+                <h1 class="p-2 mt-5 font-weight-normal" style="font-size: 3rem">My<span style="color: rgb(3, 32, 110);">Wish</span>.com</h1>
+                <small class="text-center text-success">Select upto 3 wishes</small>
+                <input id="inp-search" class="form-control m-3 w-50 align-self-center shadow text-center" style="color: rgb(3, 32, 110);" type="search" placeholder="Search" aria-label="Search">
+                <div id="choose-div" class="text-center align-self-center m-3 border-0">
                     <div class="form-group">
-                        <select class="form-control"  id="exampleFormControlSelect1">
-                          <option>Choose amongst suggestions</option>
-                          <option>option 1</option>
-                          <option>option 2</option>
-                          <option>option 3</option>
-                          <option>option 4</option>
-                          <option>option 5</option>
+                        <select class="form-control"  id="select-wish">
+                          <option value="default" selected disabled>Choose amongst suggestions</option>
+                          <option value="1">option 1</option>
+                          <option value="2">option 2</option>
+                          <option value="3">option 3</option>
+                          <option value="4">option 4</option>
+                          <option value="5">option 5</option>
                         </select>
                       </div>
                       <h5>OR</h5>
-                      <input class="form-control  w-100 align-self-center shadow text-center" style="color: rgb(3, 32, 110);" type="text" placeholder="Type here" aria-label="Type here">
-                      <button class="btn w-100 mt-2" style="background-color: rgb(3, 32, 110);color: white;">Create new wish</button>
-                      <div class="form-group m-3">
-                        <select class="form-control"  id="exampleFormControlSelect1">
-                          <option>Choose Your Country</option>
-                          <option>option 1</option>
-                          <option>option 2</option>
-                          <option>option 3</option>
-                          <option>option 4</option>
-                          <option>option 5</option>
-                        </select>
-                      </div>
+                      <input id="create-wish-inp" class="form-control w-100 align-self-center shadow text-center" style="color: rgb(3, 32, 110);" type="text" placeholder="Type here" aria-label="Type here">
+                      <button id="create-wish-btn" class="btn w-100 mt-2" style="background-color: rgb(3, 32, 110);color: white;">Create new wish</button>
+
                 </div>
-                <div class="w-100 d-flex flex-row justify-content-center">
-                    <div class="chip shadow-lg" id="chip1">
-                        John Doe
-                        <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
-                    </div>
-                    <div class="chip shadow-lg" id="chip2">
-                        John Doe
-                        <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
-                    </div>
-                    <div class="chip shadow-lg" id="chip3">
-                        John Doe
-                        <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
-                    </div>
+                <div class="form-group m-3 w-50 align-self-center">
+                    <select class="form-control text-center"  id="select-country">
+                       <option value="default" selected disabled>Choose Your Country</option> 
+                       <option value="111">India</option>
+                    </select>
                 </div>
-                <button class="btn w-25 align-self-center m-4" style="background-color: rgb(3, 32, 110);color: white;">Submit</button>
+                <div class="w-100 d-flex flex-row flex-wrap justify-content-center" id="chip-div">
+                    
+                </div>
+                <button id="submit-btn" class="btn w-25 align-self-center m-4" style="background-color: rgb(3, 32, 110);color: white;">Submit</button>
             </div>
             <div class="col-md-5 d-none d-md-block" id="right-div">
                 <img src="hert-niks-pyJcI-cbHCg-unsplash.jpg" alt="" srcset="">
             </div>
         </div>
     </div>
-    <script src="form.js"></script>
+    <script type="text/javascript" src="form.js"></script>
 </body>
 </html>

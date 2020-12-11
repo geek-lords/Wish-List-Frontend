@@ -13,6 +13,10 @@
     background-size: 20%, 20%, 20%, 10%;
 }
 
+#choose-div{
+  display: none;
+}
+
 #right-div img {
     width: 100%;
     height: 100vh;
@@ -37,6 +41,10 @@
     border-radius: 50%;
   }
   
+  #submit-btn{
+    display: none;  
+  }
+
   .closebtn {
     padding-left: 10px;
     color: #888;
@@ -49,3 +57,4 @@
   .closebtn:hover {
     color: #000;
   }
+  
