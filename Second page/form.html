@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wish List</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+
+<link rel="stylesheet" href="form.css">
+
+</head>
+<body>
+    <div class="container-fluid p-0 h-100">
+        <div class="row">
+            <div class="col-md-7 d-flex flex-column text-center" id="left-div">
+                <h1 class="p-2 mt-5 font-weight-normal display-4">My<span style="color: rgb(3, 32, 110);">Wish</span>.com</h1>
+                <input class="form-control m-3 w-50 align-self-center shadow text-center" style="color: rgb(3, 32, 110);" type="search" placeholder="Search" aria-label="Search">
+                <div class="w-50 text-center align-self-center m-3 border-0">
+                    <div class="form-group">
+                        <select class="form-control"  id="exampleFormControlSelect1">
+                          <option>Choose amongst suggestions</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                          <option>option 4</option>
+                          <option>option 5</option>
+                        </select>
+                      </div>
+                      <h5>OR</h5>
+                      <input class="form-control  w-100 align-self-center shadow text-center" style="color: rgb(3, 32, 110);" type="text" placeholder="Type here" aria-label="Type here">
+                      <button class="btn w-100 mt-2" style="background-color: rgb(3, 32, 110);color: white;">Create new wish</button>
+                      <div class="form-group m-3">
+                        <select class="form-control"  id="exampleFormControlSelect1">
+                          <option>Choose Your Country</option>
+                          <option>option 1</option>
+                          <option>option 2</option>
+                          <option>option 3</option>
+                          <option>option 4</option>
+                          <option>option 5</option>
+                        </select>
+                      </div>
+                </div>
+                <div class="w-100 d-flex flex-row justify-content-center">
+                    <div class="chip shadow-lg">
+                        John Doe
+                        <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+                    </div>
+                    <div class="chip">
+                        John Doe
+                        <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+                    </div>
+                    <div class="chip">
+                        John Doe
+                        <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+                    </div>
+                </div>
+                <button class="btn w-25 align-self-center m-4" style="background-color: rgb(3, 32, 110);color: white;">Submit</button>
+            </div>
+            <div class="col-md-5 d-none d-md-block" id="right-div">
+                <img src="hert-niks-pyJcI-cbHCg-unsplash.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
