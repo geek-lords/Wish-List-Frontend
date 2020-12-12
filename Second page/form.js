@@ -237,7 +237,7 @@ function submitForm(){
                 </tbody>
             </table>
             <div class="alert alert-success">
-                <strong>Loved it?</strong> Check out what wishes are topping the charts globally! <a href="/globalresults" class="alert-link">Click here</a>.
+                <strong>Loved it?</strong> Check out what wishes are topping the charts globally! <a href="#" class="alert-link">Click here</a>.
             </div>`);
             },
             error: function (jqXHR, status, err) {
